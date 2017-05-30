@@ -45,13 +45,7 @@ namespace Microsoft.AspNetCore.Mvc.Filters
                 return (CompiledPageActionDescriptor)base.ActionDescriptor;
             }
         }
-        
-        /// <summary>
-        /// Gets or sets the <see cref="IActionResult"/> to execute. Setting <see cref="Result"/> to a non-<c>null</c>
-        /// value inside a page filter will short-circuit the page and any remaining page filters.
-        /// </summary>
-        public virtual IActionResult Result { get; set; }
-        
+
         /// <summary>
         /// Gets or sets the descriptor for the handler method about to be invoked.
         /// </summary>
