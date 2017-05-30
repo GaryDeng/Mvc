@@ -12,5 +12,5 @@ namespace Microsoft.AspNetCore.Mvc.Filters
     /// <returns>
     /// A <see cref="Task"/> that on completion returns an <see cref="PageHandlerExecutedContext"/>.
     /// </returns>
-    public delegate Task<PageHandlerExecutedContext> PageHandlerExecutionDelegate(PageHandlerExecutingContext context);
+    public delegate Task<PageHandlerExecutedContext> PageHandlerExecutionDelegate();
 }

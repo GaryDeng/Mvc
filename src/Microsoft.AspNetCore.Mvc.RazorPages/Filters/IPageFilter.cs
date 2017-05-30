@@ -6,7 +6,7 @@ namespace Microsoft.AspNetCore.Mvc.Filters
     /// <summary>
     /// A filter that surrounds execution of a page handler method.
     /// </summary>
-    public interface IPageFilter
+    public interface IPageFilter : IFilterMetadata
     {
         /// <summary>
         /// Called after a handler method has been selected, but before model binding occurs.

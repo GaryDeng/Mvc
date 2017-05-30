@@ -8,7 +8,7 @@ namespace Microsoft.AspNetCore.Mvc.Filters
     /// <summary>
     /// A filter that asynchronously surrounds execution of the page handler method.
     /// </summary>
-    public interface IAsyncPageFilter
+    public interface IAsyncPageFilter : IFilterMetadata
     {
         /// <summary>
         /// Called asynchronously after the handler method has been selected, but before model binding occurs.
